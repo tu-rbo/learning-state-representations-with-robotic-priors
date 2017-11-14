@@ -47,12 +47,10 @@ matplotlib
 
     sudo apt-get install python3-matplotlib
 
-lasagne (and theano) for main.py --> http://lasagne.readthedocs.io/en/latest/user/installation.html
+either lasagne (and theano) --> http://lasagne.readthedocs.io/en/latest/user/installation.html
 
-or alternatively for main_tf.py
 
-sonnet --> https://github.com/deepmind/sonnet
-Tensorflow --> https://www.tensorflow.org/install/
+or sonnet --> https://github.com/deepmind/sonnet and Tensorflow --> https://www.tensorflow.org/install/
 
 Usage
 -----
