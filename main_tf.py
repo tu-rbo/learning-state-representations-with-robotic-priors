@@ -1,10 +1,12 @@
-"""Author: Rico Jonschkowski, Marco Morik (rico.jonschkowski@tu-berlin.de)
+"""Author: Rico Jonschkowski (rico.jonschkowski@tu-berlin.de), ported from Theano to Tensorflow by Marco Morik
 
 This is a simple implementation of the method for state representation learning described our the paper "Learning State
 Representations with Robotic Priors" (Jonschkowski & Brock, 2015). This implementation complements the paper to provide
 sufficient detail for reproducing our results and for reusing the method in other research while minimizing code
 overhead (extensive explanations and descriptions are omitted here and can be found in the paper).
-Now using Tensorflow instead od Theano
+
+This version uses Tensorflow and Sonnet instead of Theano.
+
 If you are using this implementation in your research, please consider giving credit by citing our paper:
 
 @article{jonschkowski2015learning,
@@ -98,9 +100,6 @@ class SRL4robotics:
         
         optimizer = tf.train.AdamOptimizer(learning_rate)
         self.train_op = optimizer.minimize(self.loss)
-          
-        
-
 
 
     def learn(self, observations, actions, rewards, episode_starts):
