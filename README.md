@@ -30,7 +30,7 @@ Files
 -----
 
 main.py -- python3 script that includes our method, plotting functions, and batch learning experiments for two different tasks
-Tensorflow.py -- python3 script with the same functionality as main.py using Tensorflow and Sonnet instead of Theano.
+main_tf.py -- python3 script that is equivalent to main.py but uses Tensorflow and Sonnet instead of Theano
 *.npz -- training and test data for two different tasks (described in detail below, see DATA)
 
 
@@ -47,9 +47,9 @@ matplotlib
 
     sudo apt-get install python3-matplotlib
 
-lasagne (and theano) --> http://lasagne.readthedocs.io/en/latest/user/installation.html
+lasagne (and theano) for main.py --> http://lasagne.readthedocs.io/en/latest/user/installation.html
 
-or alternative
+or alternatively for main_tf.py
 
 sonnet --> https://github.com/deepmind/sonnet
 Tensorflow --> https://www.tensorflow.org/install/
@@ -60,6 +60,11 @@ Usage
 If all dependencies are met, simply run
 
     python3 main.py
+
+or 
+
+    python3 main_tf.py
+ 
 
 which should first learn state representations for the simple navigation task, followed by the slot car task. After the representation is learned from one batch of data (*train.npz) it is then applied to a new batch of data (*test.npz) for each task. The command line output will walk you through the process.
 
