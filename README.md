@@ -30,6 +30,7 @@ Files
 -----
 
 main.py -- python3 script that includes our method, plotting functions, and batch learning experiments for two different tasks
+Tensorflow.py -- python3 script with the same functionality as main.py using Tensorflow and Sonnet instead of Theano.
 *.npz -- training and test data for two different tasks (described in detail below, see DATA)
 
 
@@ -48,6 +49,10 @@ matplotlib
 
 lasagne (and theano) --> http://lasagne.readthedocs.io/en/latest/user/installation.html
 
+or alternative
+
+sonnet --> https://github.com/deepmind/sonnet
+Tensorflow --> https://www.tensorflow.org/install/
 
 Usage
 -----
